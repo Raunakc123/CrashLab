@@ -1,0 +1,283 @@
+{
+  "last_observation": "2026-10-08 00:00:00",
+  "observations": 2204,
+  "calibration_returns": 1260,
+  "configuration": {
+    "paths": 100000,
+    "horizon": 90,
+    "seed": 42,
+    "threshold": 0.2,
+    "definition": "starting loss",
+    "block": 10,
+    "vol_stress": 1.0,
+    "jump_stress": 1.0,
+    "crisis_stress": 1.0,
+    "antithetic": false
+  },
+  "disabled": {},
+  "results": {
+    "GBM": {
+      "probability": 0.00887,
+      "mc_se": 0.0002965016542955536,
+      "mc_ci95": [
+        0.008307428273769828,
+        0.009470304776837298
+      ],
+      "terminal_p05": 6855.8751220703125,
+      "terminal_median": 8100.582763671875,
+      "terminal_p95": 9573.91748046875,
+      "terminal_mean": 8142.09521484375,
+      "terminal_VaR95": 0.11712057143449783,
+      "terminal_ES95": 0.1534469872713089,
+      "max_drawdown_mean": 0.0932588279247284,
+      "max_drawdown_p95": 0.1698799878358841,
+      "threshold_probabilities": {
+        "0.1": 0.16163,
+        "0.15": 0.04565,
+        "0.2": 0.00887,
+        "0.3": 7e-05,
+        "0.4": 0.0
+      },
+      "convergence": [
+        {
+          "paths": 1000,
+          "p": 0.011
+        },
+        {
+          "paths": 5000,
+          "p": 0.0072
+        },
+        {
+          "paths": 100000,
+          "p": 0.00887
+        }
+      ],
+      "seconds": 0.23755918899996686
+    },
+    "Bootstrap": {
+      "probability": 0.01069,
+      "mc_se": 0.0003252033809787346,
+      "mc_ci95": [
+        0.010071133129882332,
+        0.01134646009185646
+      ],
+      "terminal_p05": 6903.932446289063,
+      "terminal_median": 8127.726806640625,
+      "terminal_p95": 9379.7197265625,
+      "terminal_mean": 8135.22314453125,
+      "terminal_VaR95": 0.11093206703662872,
+      "terminal_ES95": 0.14973828196525574,
+      "max_drawdown_mean": 0.08910000324249268,
+      "max_drawdown_p95": 0.17234015464782715,
+      "threshold_probabilities": {
+        "0.1": 0.15925,
+        "0.15": 0.04727,
+        "0.2": 0.01069,
+        "0.3": 0.00021,
+        "0.4": 0.0
+      },
+      "convergence": [
+        {
+          "paths": 1000,
+          "p": 0.01
+        },
+        {
+          "paths": 5000,
+          "p": 0.0086
+        },
+        {
+          "paths": 100000,
+          "p": 0.01069
+        }
+      ],
+      "seconds": 0.27148110899997846
+    },
+    "GARCH": {
+      "probability": 0.00514,
+      "mc_se": 0.00022613227102737902,
+      "mc_ci95": [
+        0.0047153915845059595,
+        0.005602628038452204
+      ],
+      "terminal_p05": 7367.89697265625,
+      "terminal_median": 8494.04931640625,
+      "terminal_p95": 9794.185693359375,
+      "terminal_mean": 8529.8994140625,
+      "terminal_VaR95": 0.051184117794036865,
+      "terminal_ES95": 0.09960754215717316,
+      "max_drawdown_mean": 0.0653129294514656,
+      "max_drawdown_p95": 0.1426422894001007,
+      "threshold_probabilities": {
+        "0.1": 0.04655,
+        "0.15": 0.01499,
+        "0.2": 0.00514,
+        "0.3": 0.00082,
+        "0.4": 0.00014
+      },
+      "convergence": [
+        {
+          "paths": 1000,
+          "p": 0.002
+        },
+        {
+          "paths": 5000,
+          "p": 0.0064
+        },
+        {
+          "paths": 100000,
+          "p": 0.00514
+        }
+      ],
+      "seconds": 0.579208584999833
+    },
+    "Jump": {
+      "probability": 0.00796,
+      "mc_se": 0.00028100957990787436,
+      "mc_ci95": [
+        0.007427809046090039,
+        0.008529993918951253
+      ],
+      "terminal_p05": 6879.535888671875,
+      "terminal_median": 8105.076904296875,
+      "terminal_p95": 9523.13134765625,
+      "terminal_mean": 8139.55712890625,
+      "terminal_VaR95": 0.11407378315925598,
+      "terminal_ES95": 0.15071286261081696,
+      "max_drawdown_mean": 0.09018752723932266,
+      "max_drawdown_p95": 0.16694998741149902,
+      "threshold_probabilities": {
+        "0.1": 0.15447,
+        "0.15": 0.04188,
+        "0.2": 0.00796,
+        "0.3": 0.00014,
+        "0.4": 0.0
+      },
+      "convergence": [
+        {
+          "paths": 1000,
+          "p": 0.01
+        },
+        {
+          "paths": 5000,
+          "p": 0.0102
+        },
+        {
+          "paths": 100000,
+          "p": 0.00796
+        }
+      ],
+      "jump_count": 4500401,
+      "seconds": 0.6629082169999947
+    },
+    "Regime": {
+      "probability": 0.0216,
+      "mc_se": 0.00045971121369833915,
+      "mc_ci95": [
+        0.020717173437982763,
+        0.022519581578836514
+      ],
+      "terminal_p05": 6882.788085937501,
+      "terminal_median": 8335.03759765625,
+      "terminal_p95": 9541.60576171875,
+      "terminal_mean": 8291.3154296875,
+      "terminal_VaR95": 0.11365468800067902,
+      "terminal_ES95": 0.17602314054965973,
+      "max_drawdown_mean": 0.08078394830226898,
+      "max_drawdown_p95": 0.19030262529850006,
+      "threshold_probabilities": {
+        "0.1": 0.11129,
+        "0.15": 0.04913,
+        "0.2": 0.0216,
+        "0.3": 0.00319,
+        "0.4": 0.00021
+      },
+      "convergence": [
+        {
+          "paths": 1000,
+          "p": 0.02
+        },
+        {
+          "paths": 5000,
+          "p": 0.0252
+        },
+        {
+          "paths": 100000,
+          "p": 0.0216
+        }
+      ],
+      "crisis_entry_probability": 0.28029,
+      "seconds": 0.8372450280000976
+    }
+  },
+  "EVT_daily_log_loss": {
+    "threshold": 0.01648517803985365,
+    "shape": 0.07858772006259643,
+    "scale": 0.007704674971392161,
+    "exceedances": 63,
+    "tail_fraction": 0.05,
+    "VaR": 0.029703710108595772,
+    "ES": 0.03919293600630457,
+    "confidence": 0.99,
+    "normal_VaR": 0.02438114062831678,
+    "normal_ES": 0.02800073551386265,
+    "origin": "estimated; daily log-loss tail"
+  },
+  "replay_configuration": {
+    "window": 252,
+    "horizon": 90,
+    "stride": 90,
+    "paths": 1000,
+    "period": [
+      "2019-10-01",
+      "2021-01-01"
+    ]
+  },
+  "replay_origins": 3,
+  "replay_metrics": {
+    "GBM": {
+      "Brier": 0.3554160000003333,
+      "log_loss": 4.739099312405158,
+      "precision": null,
+      "recall": 0.0,
+      "false_positive_rate": 0.0,
+      "missed_crash_rate": 1.0,
+      "stability_mean_abs_change": 0.0924995
+    },
+    "Bootstrap": {
+      "Brier": 0.3499583333336666,
+      "log_loss": 4.719486709094843,
+      "precision": null,
+      "recall": 0.0,
+      "false_positive_rate": 0.0,
+      "missed_crash_rate": 1.0,
+      "stability_mean_abs_change": 0.09599950000000002
+    },
+    "GARCH": {
+      "Brier": 0.332934,
+      "log_loss": 2.315720536453743,
+      "precision": null,
+      "recall": 0.0,
+      "false_positive_rate": 0.0,
+      "missed_crash_rate": 1.0,
+      "stability_mean_abs_change": 0.016
+    },
+    "Jump": {
+      "Brier": 0.35313466666666665,
+      "log_loss": 2.2022205154209136,
+      "precision": null,
+      "recall": 0.0,
+      "false_positive_rate": 0.0,
+      "missed_crash_rate": 1.0,
+      "stability_mean_abs_change": 0.09
+    },
+    "Regime": {
+      "Brier": null,
+      "log_loss": null,
+      "precision": null,
+      "recall": 0.0,
+      "false_positive_rate": 0.0,
+      "missed_crash_rate": 1.0,
+      "stability_mean_abs_change": null
+    }
+  }
+}
