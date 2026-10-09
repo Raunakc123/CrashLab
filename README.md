@@ -2,6 +2,12 @@
 
 Runnable Python engine and interactive Streamlit interface. All displayed forecasts are computed from input data and fitted or explicitly user-defined parameters. No pretrained AI forecasts, invented crash scores, or demo prices are used.
 
+## Student view (default)
+
+The default interface is designed for ISC Class 12 students: choose a market, load real prices, choose a forecast period and size of fall, then click **Run my simulation**. It requests five years of history and uses up to the most recent 1,260 returns. Each available model simulates 10,000 futures using fixed settings. Results explain the event frequency, label graph axes, and connect percentages, probability and derivatives to Class 12 maths. Technical assumptions are explained without presenting these research models as ISC syllabus requirements.
+
+Changing the market requires reloading its prices. Changing the data, horizon or fall threshold hides old results until the simulation is rerun. CSV uploads take priority over market downloads. The sidebar's **Advanced view** retains the original dashboard, controls, diagnostic models, stress testing and historical replay. Forecast probabilities remain conditional estimates, not claims of reliable crash prediction.
+
 ## Run on your MacBook / Windows / Linux
 
 Use Python **3.12** (3.11–3.13 should work). Unzip this folder, open a terminal inside it:
